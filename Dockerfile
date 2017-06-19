@@ -10,6 +10,6 @@ RUN apt-get install -y build-essential groff libssl-dev libffi-dev openssl mosqu
 
 # ENV NODE_ENV local
 
-# RUN npm install -g serverless@1.14
+RUN npm install -g serverless@1.14
 
 WORKDIR /development
