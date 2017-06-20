@@ -1,5 +1,4 @@
-#https://github.com/npm/npm/issues/16766 prevents NPM5 on CircleCI for now :-(
-FROM node:7.9
+FROM node:8
 
 RUN apt-key adv --fetch-keys http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
 RUN curl http://repo.mosquitto.org/debian/mosquitto-jessie.list -o /etc/apt/sources.list.d/mosquitto-jessie.list
@@ -11,6 +10,6 @@ RUN curl https://raw.githubusercontent.com/trek10inc/awsume/master/awsume > /usr
 
 ENV NODE_ENV local
 
-#RUN npm install -g serverless@1.14
+npm install -g serverless@1.14 gulp mocha
 
 WORKDIR /development
