@@ -5,8 +5,7 @@ RUN curl http://repo.mosquitto.org/debian/mosquitto-jessie.list -o /etc/apt/sour
 RUN apt-get update
 RUN apt-get install -y build-essential groff libssl-dev libffi-dev openssl mosquitto mosquitto-clients unzip python-dev python-pip vim less
 
-RUN pip install --upgrade cffi==1.2.1 awscli
-RUN curl https://raw.githubusercontent.com/trek10inc/awsume/master/awsume > /usr/local/bin/awsume && chmod 700 /usr/local/bin/awsume && echo "alias awsume='. awsume'" >> .bash_profile
+RUN pip install --upgrade cffi==1.2.1 awscli awsume
 
 ENV NODE_ENV local
 
