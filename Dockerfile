@@ -10,6 +10,6 @@ RUN curl https://raw.githubusercontent.com/trek10inc/awsume/master/awsume > /usr
 
 ENV NODE_ENV local
 
-RUN npm install -g serverless@1.14 gulp mocha
+RUN npm install -g serverless@1.16 gulp mocha
 
 WORKDIR /development
