@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:7
 
 RUN apt-key adv --fetch-keys http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
 RUN curl http://repo.mosquitto.org/debian/mosquitto-jessie.list -o /etc/apt/sources.list.d/mosquitto-jessie.list
