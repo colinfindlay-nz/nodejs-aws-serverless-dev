@@ -10,6 +10,6 @@ RUN pip install --upgrade cffi==1.2.1 awscli awsume
 
 ENV NODE_ENV local
 
-#RUN npm install -g serverless@1.14
+#RUN npm install -g serverless@1.20
 
 WORKDIR /development
