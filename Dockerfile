@@ -7,6 +7,6 @@ RUN pip install --upgrade cffi==1.2.1 awscli awsume
 
 ENV NODE_ENV local
 
-RUN npm install -g serverless@1.57 gulp mocha
+RUN npm install -g serverless@1.73 gulp mocha
 
 WORKDIR /development
